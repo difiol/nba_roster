@@ -1,0 +1,69 @@
+.App {
+	text-align: center;
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@font-face {
+	font-family: "scoreBoard";
+	src: local("scoreBoard"), url(./fonts/scoreboard.ttf) format("truetype");
+}
+
+body {
+	background-image: url("./images/nba-court.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: white;
+	font-family: "Poppins", sans-serif;
+}
+
+h1 {
+	font-family: "scoreBoard", scoreBoard;
+}
+
+#search {
+	font-family: "scoreBoard", scoreBoard;
+}
+
+#score-board {
+	width: 420px;
+}
+
+#menu {
+	width: fit-content;
+	padding-right: 425px;
+}
+
+@media (max-width: 1000px) {
+	body {
+		background-image: url("./images/nba-court.jpeg");
+		background-repeat: no-repeat;
+		background-size: 5000vmax;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+	#roster {
+		width: 50%;
+		margin: auto;
+		padding-left: 4px;
+	}
+
+	#roster-title {
+		font-size: 16px;
+		padding-top: 5px;
+	}
+}
